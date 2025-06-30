@@ -10,40 +10,84 @@
     <div class="container background">
         <div class="weather-card">
             
-            <div class="search-bar">
-                <img src="./images/burger-bar.png" alt="hamburger menu" />
-                <input type="text" id="searchCity" name="searchCity" placeholder="Search for your city">
-                <button><img src="./images/search.png" alt="search icon"></button>
-                <div class="search-result-container hide" id="search-result">
-                    <!-- example result -->
-                    <div class="result">
-                        <p>📌 Kuala Lumpur</p>
-                        <p>🌍 MY</p>
-                        <p>🗺️ Lat: 3.1516964 Lon: 101.6942371</p>
-                    </div>
-
-                    <div class="result">
-                        <p>📌 Kuala Lumpur</p>
-                        <p>🌍 MY</p>
-                        <p>🗺️ Lat: 3.1516964 Lon: 101.6942371</p>
-                    </div>
-
-                    <div class="result">
-                        <p>📌 Kuala Lumpur</p>
-                        <p>🌍 MY</p>
-                        <p>🗺️ Lat: 3.1516964 Lon: 101.6942371</p>
-                    </div>
-
-                    <div class="result">
-                        <p>📌 Kuala Lumpur</p>
-                        <p>🌍 MY</p>
-                        <p>🗺️ Lat: 3.1516964 Lon: 101.6942371</p>
-                    </div>
-
-                </div>
-            </div>
-
+            <div class="weather-card-front">
             
+                <div class="search-bar">
+                    <img src="./images/burger-bar.png" alt="hamburger menu" />
+                    <input type="text" id="searchCity" name="searchCity" placeholder="Search for your city">
+                    <button><img src="./images/search.png" alt="search icon"></button>
+                    <div class="search-result-container hide" id="search-result">
+                        <!-- example result -->
+                        <div class="result">
+                            <p>📌 Kuala Lumpur</p>
+                            <p>🌍 MY</p>
+                            <p>🗺️ Lat: 3.1516964 Lon: 101.6942371</p>
+                        </div>
+
+                        <div class="result">
+                            <p>📌 Kuala Lumpur</p>
+                            <p>🌍 MY</p>
+                            <p>🗺️ Lat: 3.1516964 Lon: 101.6942371</p>
+                        </div>
+
+                        <div class="result">
+                            <p>📌 Kuala Lumpur</p>
+                            <p>🌍 MY</p>
+                            <p>🗺️ Lat: 3.1516964 Lon: 101.6942371</p>
+                        </div>
+
+                        <div class="result">
+                            <p>📌 Kuala Lumpur</p>
+                            <p>🌍 MY</p>
+                            <p>🗺️ Lat: 3.1516964 Lon: 101.6942371</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="locationDate">
+                    <div class="location">
+                        <p>📍Malaysia, Kuala Lumpur</p>
+                    </div>
+                    <div class="timeDate">
+                        <p>Mon, 30/6/2025</p>
+                    </div>
+                </div>
+
+                <div class="weather">
+                    <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="few cloudss"/>
+                </div>
+                <div class="weather-desc">
+                    <p>28°C</p>
+                    <p>Few Clouds</p>
+                </div>
+
+
+                <div class="uv">
+                    <div class="uv-container">
+                        <div class="uv-front weather-information">
+                            <img src="./images/uv-protection.png" alt="uv-protection" />
+                            <span>
+                                <p class="title">UV Index</p>
+                                <p>5.6</p>
+                            </span>
+                        </div>
+                        <div class="uv-back">
+                            <p><strong>Max UV: 12.5</strong></p>
+                            <p>Very high/extreme UV: Wear sunscreen, hat, sunglasses. Minimize sun exposure!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wind-speed weather-information">
+                    <img src="./images/wind.png" alt="wind speed" />
+                    <span>
+                        <p class="title">Wind Speed</p>
+                        <p>4.1 m/s</p>
+                    </span>
+                </div>
+
+            </div>
         </div>
     </div>
 </body>
