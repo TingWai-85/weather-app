@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Michroma&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.background {
+    background-image: url("./images/clear_sky.jpg");
+    background-color: #B5DEFF;
+    background-size: cover;
+}
+
+
+.weather-card {
+    width: 30%;
+    height: 90%;
+    background-color: rgba(139, 139, 139, 0.5);
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+.weather-card-front {
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 2fr 0.2fr;
+    box-sizing: border-box;
+}
+
+/* weather back card */
+
+.weather-card-back {
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.2fr;
+    box-sizing: border-box;
+}
+
+/* weather back card */
+
+/* search bar */
+.search-bar {
+    width: 100%;
+    grid-column: span 2;
+    background-color: rgb(255,255,255,255);
+    border: 1px solid white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+
+.search-bar img{
+    height: 1rem;
+    width: 1rem;
+    margin-left: 0.5rem;
+}
+
+.search-bar #searchCity{
+    width: 77%;
+    height: 73%;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    padding-left: 3%;
+}
+
+.search-bar button{
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background-color: rgba(255,255,255,0);
+    cursor: pointer;
+}
+
+.search-bar button img{
+    width: 100%;
+    height: 100%;
+    margin: 0
+}
+
+.search-result-container {
+    width: 26rem;
+    height: 20rem;
+    position: absolute;
+    z-index: 5;
+    top: 18%;
+    background-color: white;
+    border: 5px solid rgb(233, 232, 232);
+    border-top: none;
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+.search-result-container .result{
+    padding: 1rem 1rem 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.search-result-container .result:hover{
+    background-color: #cae3f7;
+}
+/* search bar */
+
+/* location and date */
+.locationDate {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+/* location and date */
+
+/* weather information */
+.weather {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather img {
+    width: 55%;
+}
+
+/* weather information */
+/* uv protection & weather information (flip card)*/
+.uv, .weather-desc {
+    perspective: 500px;
+}
+
+.front-back-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.uv:hover .front-back-container,
+.weather-desc:hover .front-back-container {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.weather-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    font-weight: 900;
+    color: white;
+}
+
+.weather-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.weather-information img {
+    width: 15%;
+}
+.weather-information span {
+    text-align: center;
+    font-weight: 600;
+}
+.title {
+    font-weight: 900;
+    color: rgb(230, 222, 222);
+    font-style: italic;
+}
+
+.weather-back {
+    font-size: 120%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weather-back p span {
+    font-weight: 900;
+    color: rgb(230, 222, 222);
+}
+
+.back{
+  transform: rotateY(180deg);
+}
+/* uv protection & weather information (flip card)*/
+
+/*forecast weather */
+.forecast-container {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.forecast {
+    width: 19%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 120%;
+    background-color: rgba(236, 233, 233, 0.5);
+    border-radius: 20px;
+}
+/*forecast weather */
+
+/*modify back information size */
+.weather-information-back img {
+    width: 29%;
+}
+.weather-information-back span {
+    text-align: center;
+    font-weight: 600;
+    font-size: 150%;
+}
+
+/*modify back information size */
+
+/*Flip Card Button */
+.flip-card {
+    width: 100%;
+    grid-column: span 2;
+}
+
+.flip-card button {
+    width: 100%;
+    border: none;
+    background-color: rgba(255,255,255,0);
+    font-family: "Michroma", sans-serif;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+}
+
+.flip-card button:hover {
+    color: rgb(70, 70, 241);
+}
+
+/*Flip Card Button */
+
+footer { /*need modification*/
+    width: 100%;
+    position: absolute;
+    bottom: 0.2%;
+    box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+    color: #c0bebe;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .weather-card {
+        width: 70%;
+        height: 90%;
+        background-color: rgba(255,255,255,0.5);
+    }
+}
