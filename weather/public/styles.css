@@ -277,12 +277,17 @@
 
 /*Flip Card Button */
 
-footer { /*need modification*/
+footer {
     width: 100%;
     position: absolute;
     bottom: 0.2%;
     box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    padding-left: 1%;
     font-weight: bold;
+    font-size: 90%;
     color: #c0bebe;
 }
 
