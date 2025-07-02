@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Result(prop){
     return (
-        <div onClick={prop.getLocation} className="result">
+        <div onClick={prop.onItemClick} className="result">
             <p>📌 {prop.city}</p>
             <p>🌍 {prop.country}</p>
             <p>🗺️ Lat: {prop.lat} Lon: {prop.lon}</p>
@@ -17,8 +17,8 @@ function SearchResult(prop) {
             {prop.resultList.map((result, index) =>{
                 return <Result 
                 key={index}
-                getLocation={() => {
-                    console.log(result)
+                onItemClick={() => {
+                    prop.onItemClick(result)
                 }}
                 city={result.name} 
                 country={result.country} 
