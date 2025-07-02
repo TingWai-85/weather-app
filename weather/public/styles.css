@@ -15,12 +15,35 @@
     color: white;
 }
 
-.background {
+.clear-sky {
     background-image: url("./images/clear_sky.jpg");
     background-color: #B5DEFF;
     background-size: cover;
 }
 
+.overcast-cloud{
+    background-image: url("./images/overcast_cloud.jpg");
+    background-color: #B5DEFF;
+    background-size: cover;
+}
+
+.raining{
+    background-image: url("./images/raining.jpg");
+    background-color: #B5DEFF;
+    background-size: cover;
+}
+
+.snowing{
+    background-image: url("./images/snowing.jpg");
+    background-color: #B5DEFF;
+    background-size: cover;
+}
+
+.thunderstorm{
+    background-image: url("./images/thunderstorm.jpg");
+    background-color: #B5DEFF;
+    background-size: cover;
+}
 
 .weather-card {
     width: 30%;
@@ -201,7 +224,7 @@
 }
 .title {
     font-weight: 900;
-    color: rgb(230, 222, 222);
+    color: rgb(58, 56, 56);
     font-style: italic;
 }
 
