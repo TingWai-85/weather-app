@@ -39,9 +39,9 @@ The Weather App is a responsive, dynamic React web application that allows users
 | Frontend   | React.js, JSX, CSS (Flexbox / Grid)     |
 | API    | [OpenWeather API](https://openweathermap.org/api), [OpenUV API](https://www.openuv.io/)               |
 | Data Fetch   | Axios                     |
-| State Mgmt | React useState & useEffect              |
+| State Mgmt | React ```useState``` & ```useEffect```              |
 | Build Tool | Vite               |
-| Env Config | Vite + .env file with VITE_ prefix            |
+| Env Config | Vite + ```.env``` file with ```VITE_``` prefix            |
 | Version Control | Git, GitHub               |
 
 ---
@@ -53,7 +53,7 @@ The Weather App is a responsive, dynamic React web application that allows users
 Before you begin, make sure the following are installed in your development environment:
 
 - **[Node.js](https://nodejs.org/en/download)**
-- (Optional) **[VS Code](https://code.visualstudio.com/download)**
+- *(Optional)* **[VS Code](https://code.visualstudio.com/download)**
 
 > ⚠️ You must also register for API keys ( [OpenWeather API](https://openweathermap.org/api) and [OpenUV API](https://www.openuv.io/) ) to use this app.
 
@@ -104,8 +104,8 @@ Open the local URL provided by Vite (e.g., http://localhost:5173) in your browse
  - [OpenUV API](https://www.openuv.io/)
  - [React](https://react.dev/)
  - [Vite](https://vite.dev/guide/)
- - [Background Image](https://www.pexels.com/)
- - [Icon](https://www.flaticon.com/)
+ - [Pexels](https://www.pexels.com/) — for background images
+ - [Flaticon](https://www.flaticon.com/)  — for weather icons
 
  ## 👨‍💻 Author
 ©2025 TingWai-85
