@@ -90,6 +90,12 @@ Open the local URL provided by Vite (e.g., http://localhost:5173) in your browse
 
 ---
 
+## 🎥 Video Tutorial
+
+Watch the setup tutorial on [YouTube](https://youtu.be/4M6QBpsI-Wg).
+
+---
+
 ## 🔧 Future Enhancements
 
  - 📍 Auto-detect location & show local weather
