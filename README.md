@@ -1,6 +1,6 @@
 # 🌤️ Weather App
 
-The Weather App is a responsive, dynamic React web application that allows users to search any city and view detailed current weather conditions. It integrates with the external API and visually enhances the user experience with background and icon updates that reflect real-time weather.
+The Weather App is a responsive, dynamic React web application that allows users to search any city and view detailed current weather conditions. It integrates with the OpenWeather and OpenUV APIs, and visually enhances the user experience with background and icon updates that reflect real-time weather.
 
 ---
 
@@ -9,18 +9,18 @@ The Weather App is a responsive, dynamic React web application that allows users
 - 🔍 Search by City Name
     - Instantly look up weather conditions by typing a city name.
 - 🌡️ Current Weather Data
-    - Display:
+    - Includes:
         - Temperature (°C)
         - Feels like temperature (°C)
         - Maximum temperature (°C)
         - Minimum temperature (°C)
         - Weather description
         - Weather icon
-- 📈 Forecast Weather Up to 5 Following Days
+- 📈 5-Day Weather Forecast
 - 🌬️ Extra Weather Details
     - Includes:
         - UV Index
-        - Wind speed & direction
+        - Wind speed
         - Humidity & pressure
         - Visibility
         - Cloudiness
@@ -36,22 +36,26 @@ The Weather App is a responsive, dynamic React web application that allows users
 
 | Layer      | Technology                     |
 |------------|--------------------------------|
-| Frontend   | React.js, JSX, CSS (Flex/Grid)     |
+| Frontend   | React.js, JSX, CSS (Flexbox / Grid)     |
 | API    | [OpenWeather API](https://openweathermap.org/api), [OpenUV API](https://www.openuv.io/)               |
 | Data Fetch   | Axios                     |
-| Version Control | Git, GitHub               |
 | State Mgmt | React useState & useEffect              |
-| Env Config | Vite + .env file (VITE_)            |
+| Build Tool | Vite               |
+| Env Config | Vite + .env file with VITE_ prefix            |
+| Version Control | Git, GitHub               |
 
 ---
 
 ## 🚀 Getting Started
 
+### ✅ Prerequisites
+
 Before you begin, make sure the following are installed in your development environment:
 
 - **[Node.js](https://nodejs.org/en/download)**
+- (Optional) **[VS Code](https://code.visualstudio.com/download)**
 
-> ⚠️ Also need to register for the API key by using the link at the API section above.
+> ⚠️ You must also register for API keys ( [OpenWeather API](https://openweathermap.org/api) and [OpenUV API](https://www.openuv.io/) ) to use this app.
 
 ---
 
@@ -76,13 +80,13 @@ Open the .env file and add the following variables (replace with your actual API
 VITE_OPEN_WEATHER_API=your_open_weather_api_key
 VITE_OPEN_UV_API="your_open_uv_api_key
 ```
-> ⚠️ Note: You must prefix the variable name with VITE_ for Vite to recognize it.
+> ⚠️ Note: Environment variables must start with ```VITE_``` to be used in React (Vite projects).
 
 ### 4. Run the App
 ```bash
 npm run dev
 ```
-After running this command, you will get the link to access the web application in your local environment. Copy and paste it in your browser. For example: http://localhost:5173
+Open the local URL provided by Vite (e.g., http://localhost:5173) in your browser to use the app.
 
 ---
 
@@ -106,4 +110,4 @@ After running this command, you will get the link to access the web application 
  ## 👨‍💻 Author
 ©2025 TingWai-85
 
-This project was built as part of a self-learning journey into React + APIs.
+This project is part of a personal learning journey in building modern, API-driven React applications.
