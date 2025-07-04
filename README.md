@@ -1,4 +1,11 @@
 # 🌤️ Weather App
+![React](https://img.shields.io/badge/React-18+-61DAFB?logo=react)
+![Vite](https://img.shields.io/badge/Vite-Frontend-blueviolet?logo=vite)
+![OpenWeather API](https://img.shields.io/badge/API-OpenWeather-007ACC)
+![OpenUV API](https://img.shields.io/badge/API-OpenUV-yellowgreen)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg)
 
 The Weather App is a responsive, dynamic React web application that allows users to search any city and view detailed current weather conditions. It integrates with the OpenWeather and OpenUV APIs, and visually enhances the user experience with background and icon updates that reflect real-time weather.
 
